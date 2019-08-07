@@ -1,0 +1,24 @@
+.CountriesList {
+  display:flex;
+  justify-content: flex-start;
+  height: 100vh;
+}
+
+.CountriesList ul {
+  overflow-y: scroll;
+  text-align: start
+}
+
+.CountriesList .NavLink {
+  text-decoration: none;
+  color:black
+}
+
+.CountriesList .NavLink:hover {
+  color:red;
+}
+
+.CountriesList .Navlink:hover .CountryLineContainer {
+  background-color:yellow;
+  border: 1px solid blue
+}

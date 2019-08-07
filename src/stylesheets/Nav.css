@@ -1,0 +1,7 @@
+.Nav{
+  display:flex;
+  justify-content: flex-start;
+  background-color:blue;
+  color:white;
+  padding-left:5%
+}
