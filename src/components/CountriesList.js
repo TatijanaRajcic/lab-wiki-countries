@@ -11,14 +11,12 @@ function CountriesList() {
   let wikiCountries = allCountries.map((country) => {
     return (
       <div>
-        <NavLink className="NavLink" to={`/details/${country.cca3}`}>
-          <div className="CountryLineContainer">
-            <CountryLine 
-              id={country.cca3} 
-              name={country.name.common}
-              flag={country.flag.normalize()}
-            />
-          </div>
+        <NavLink className="NavLink" activeClassName="ActiveNavLink" to={`/details/${country.cca3}`} >
+          <CountryLine 
+            id={country.cca3} 
+            name={country.name.common}
+            flag={country.flag}
+          />
         </NavLink>
       </div>
     )

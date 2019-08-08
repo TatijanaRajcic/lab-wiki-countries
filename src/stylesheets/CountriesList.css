@@ -14,11 +14,10 @@
   color:black
 }
 
-.CountriesList .NavLink:hover {
-  color:red;
+.CountriesList .ActiveNavLink {
+  color:yellow
 }
 
-.CountriesList .Navlink:hover .CountryLineContainer {
-  background-color:yellow;
-  border: 1px solid blue
+.CountriesList .ActiveNavLink div {
+  background-color:blue
 }

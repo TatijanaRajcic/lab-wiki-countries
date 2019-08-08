@@ -1,3 +1,8 @@
 .CountryLine li {
   list-style-type: none;
 }
+
+.CountryLine {
+  border-top: 1px grey solid;
+  padding: 2%
+}
