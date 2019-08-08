@@ -2,7 +2,8 @@ import React, {Component} from 'react';
 import CountryLine from "../components/CountryLine.js"
 import countries from "../countries.json";
 import {NavLink} from "react-router-dom";
-import "../stylesheets/CountriesList.css"
+import "../stylesheets/CountriesList.css";
+import axios from 'axios';
 
 class CountriesList extends Component {
 
@@ -11,6 +12,14 @@ class CountriesList extends Component {
     this.state = {
       allCountries: countries
     }
+  }
+
+  // set up to use external API
+  componentDidMount() {
+    axios.get("http://countries.tech-savvy.tech/countries")
+    .then(response => {
+        this.setState({allCountries: response.data})
+    })
   }
 
   render() {
